@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login-Duolingo</title>
+</head>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="DuolingoCss.css">
+    <nav id="navbar">
+        <a href="Duolingo pagina web.html">Duolingo</a>
+    </nav>
+    <h2>Bienvenido al curso de:</h2>
+    <h1 id="res"></h1>
+
+    <p>Aqui podras aprender todo lo que se necesite de este lenguaje.</p>
+
+    <h3>Login</h3>
+    <input type="text" id="name" placeholder="nombre"><br>
+    <input type="pasword" id="pas1" placeholder=" su contrasenia"><br>
+    <a href="Duolingo final.html?A=Login"><input type="button" value="Logearse" id="Submit"></a>
+    <br>
+    <p>Si se tiene que registrar toque aqui</p>
+    <a href="DuolingoRegister.html"><input type="button" value="Registrarse"></a>
+
+
+</body>
+
+<script>
+    const searchParams = new URLSearchParams(window.location.search);
+    const cont1 = document.getElementById('res');
+    cont1.textContent = searchParams.get("language")
+</script>
+
+</html>

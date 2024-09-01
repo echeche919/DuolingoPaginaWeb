@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Completado-Duolingo</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="Duolingo pagina web.html">Duolingo</a>
+    </nav>
+    <link rel="stylesheet" type="text/css" href="DuolingoCss.css">
+    <h2 style="display: inline;">Felicidades en </h2>
+    <h2 style="display: inline;" id="res"></h2>
+</body>
+<script>
+    const searchParams = new URLSearchParams(window.location.search);
+    const cont1 = document.getElementById('res');
+    cont1.textContent = searchParams.get("A")
+</script>
+
+</html>
